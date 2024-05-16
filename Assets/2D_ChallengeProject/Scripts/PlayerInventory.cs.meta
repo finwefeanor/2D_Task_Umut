@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fed95b3a5a92200498de1967548f9c75
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bodyRenderer: {instanceID: 0}
+  - defaultSprite: {instanceID: 0}
+  - animator: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

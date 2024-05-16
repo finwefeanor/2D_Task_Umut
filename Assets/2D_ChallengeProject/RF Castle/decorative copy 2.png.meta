@@ -1,0 +1,1988 @@
+fileFormatVersion: 2
+guid: ca8173453f088b14a85fc4116182e7a3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: decorative copy 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efe34151a194864b81dd00397a5061c
+      internalID: 2139123723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ece3e031d1f3e4facfa6f38f1d4f96
+      internalID: -737692729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758e7e0831bfa5d4d896e35315f81892
+      internalID: -74180672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecabbaa6e3019344f80829246b14ef87
+      internalID: -1630180915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_4
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c734307d00bdda24da99812542ed3670
+      internalID: -849282791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_5
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e643306f1f5523043bffa1f5f13ec3c6
+      internalID: -329097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc19e2bdcbdbc19429d7cff2432e3142
+      internalID: 1472168345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_7
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3191b3eafb20dce49bfa0c955b41808e
+      internalID: 526733672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_8
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1b3be462aa8e54396c6d355197a69f
+      internalID: 1257220477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_9
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734bf19ece1cf884f9f9a3c70558760f
+      internalID: 1154783556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_10
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df35c8d50efa904790d5af16a877e89
+      internalID: 2018887016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_11
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 450
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e364ed265a3b4b34e91a7aa9bfc3d290
+      internalID: -1909079266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76714134cd5f1b14cb798992ca5c3409
+      internalID: -1944072585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2ab6c6bff25b645b50d4b62a162685
+      internalID: 1830027103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef34e59348aec948a82e3b798a5e780
+      internalID: -269642656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_15
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7256ca1fece6a56468bf7eae16b06900
+      internalID: -579104214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_16
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301548936d20ee748b2d6740c7ba9a33
+      internalID: 918849853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_17
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10743d2876796b447b5e7ad821325e78
+      internalID: -1240019773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_18
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff9365100f2ab141b943f219812ba0f
+      internalID: -694672926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbfa26030eb8c3498d2ce078948a10a
+      internalID: -1215330094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_20
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff5351a25a8573418fb56724ceb888c
+      internalID: -1345961212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_21
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d461b1febcfd3e46882c3c8df02ca0d
+      internalID: -1565855385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_22
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd8d317481c82a4e9831b52b0a6b538
+      internalID: 1971557940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_23
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 388
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc1cdb1f9c7130449a56c4159c55308
+      internalID: 1017438892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3715f1a7ab309941b4205d4c5b5a0c9
+      internalID: -470211140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092dca38210040d49b46fd58df6b4700
+      internalID: 2062951930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_26
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bccb2e95b043be46b3a04ad453b74b5
+      internalID: 749693778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_27
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b537aa4701439419095a68cbb6e654
+      internalID: -1363637967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_28
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4a329aa3bbc0a4183f8eb50a110d9a
+      internalID: 1827583066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_29
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35112f01684b082499306f8ac5222896
+      internalID: -754859960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_30
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468186ca5d82a5444a0bf4fcff4ea769
+      internalID: 740532138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_31
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00444367543b39f46af190dccee41d9a
+      internalID: 1700825367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_32
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85382cd71c2ad604ab4cd58765ee2301
+      internalID: 832132101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_33
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 326
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2eec094381756f4ba901a7459108a1d
+      internalID: 391387712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af647a20152a23e47b1e3f7730b4cd70
+      internalID: -1158846989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_35
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600e937876266d943bf4e8328aeb6e93
+      internalID: 1212709190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_36
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ac9084dc9d01a4284475d4bddc7cd3
+      internalID: 1779320292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_37
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8b2a29871a7cc4cab3cdd7d79ad7b3
+      internalID: -2062781043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_38
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a964a0f3791685e48ad3162e5a9293b2
+      internalID: 367600304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_39
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69a38ec7be4caf498e67a3f7d4b13c0
+      internalID: -1656842498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_40
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e003f2c8c73789542855869efa726b3d
+      internalID: -171146129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_41
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb432aee914c2724ba58f7ab3cb10070
+      internalID: -1778249349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_42
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c16f7c31d0fc2b4d97c64859929b5f4
+      internalID: -768425387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_43
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac3f56ac72bc7b43b5699fcfd7b0566
+      internalID: -1556091858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_44
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 264
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0effce6e3bca5fe409564e99e302cc1f
+      internalID: -1189415227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5db0d4cea77dd49a48ddccb5f1fb1e
+      internalID: -1069108965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_46
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cece4c6b97c344c9d395e90ae70b42
+      internalID: -1010284648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_47
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aca167d0434ea4d954ef5cb815b0a7
+      internalID: -1047435621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_48
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c645217720e0f1479fe1fea05f46f13
+      internalID: -140155574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_49
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a70941ff7f0ac46bb15126bd4f36f0
+      internalID: -1518066056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_50
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534ded55ea30fe346b1f80081e928432
+      internalID: -740024704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_51
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81408d9053ae037459f37665ca050b70
+      internalID: 793966368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_52
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafbc9a59ef34584896f969f39d5e530
+      internalID: 1087716774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_53
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4980aa86f9370914c937e6ab0e3a6f7d
+      internalID: 734056455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_54
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed946cef75fbdb4cbd38fa93e9915d0
+      internalID: 2075031168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_55
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 202
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd615d347318348498f7fe2ee89a6183
+      internalID: 1007393725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbaef22f4acc5a645a79f8b0bffc9b3d
+      internalID: -797035383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_57
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263cce1ffdccc084faa17fbd4a377492
+      internalID: -387270702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_58
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32c621f2a0a0a340872bba937eb8c84
+      internalID: 1983094051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_59
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392df73243641fc478f8197842e8bca3
+      internalID: -1539855548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_60
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a0fe07db033fe47b61957e26efdffd
+      internalID: -418812433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_61
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8540155ccdb1dfa41894a936a26693ca
+      internalID: 2129681531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_62
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f007a998ee2d84e8858a884a99142f
+      internalID: 1549866430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_63
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505cb6f29df16d04d852b6e39bcae9f0
+      internalID: -456973048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_64
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164e8e397a4f7c54abe0bee1a4cea507
+      internalID: 1644122578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_65
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62994cc962f6f914a97f5bb1640fb687
+      internalID: -154394292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_66
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 140
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54e72ddc5e34ac43871c6b8d9876271
+      internalID: 2067789568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800530f4b7f84474b9c54ab5fd63a68b
+      internalID: 1268392739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_68
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230530ef6d65314469fd3776b55c4229
+      internalID: 731149993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_69
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d765f5ef5f2fd3a44817e2e2221a39d3
+      internalID: -1216477062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_70
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70b25bb1bb94204f83f7c12fe9b5cec
+      internalID: 215381627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_71
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534a774d3c72542428cbd54bbabcf328
+      internalID: -1404058237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_72
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6dc4cba3fb3d240b26eef032b51101
+      internalID: -2013252892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_73
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1b16e92eb73c1409936225a33bd5d2
+      internalID: 949417317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_74
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af351f805421e5b488428f91e8e3b4f4
+      internalID: 1711975593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_75
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cc22bd3837ba346baa35c6fb6509be
+      internalID: 1168386767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_76
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18cb59d87e2e254e9b30a152cf08c38
+      internalID: -1928898032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_77
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 78
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d98065f394616c4b88a764f41fde04f
+      internalID: 522443776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_78
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 16
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be9fd0543c3f3a4399734c342243cd4
+      internalID: -529696160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_79
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 16
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be06c9ce7cd388e4d85a813f4bb79c2e
+      internalID: 1263198325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_80
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 16
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8771c5569a0c3054abc661c349fce5b6
+      internalID: -1183184881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_81
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 16
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b009588d8e08f459d6839221f22fa7
+      internalID: -1564256919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_82
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 16
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fb90259fae9394c8c908873436eb43
+      internalID: 534874151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative copy 2_83
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 16
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856ba28bf91314844aa3a03ac3fa65da
+      internalID: 1518004911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1481bac9ef8ce6941a7691d40f206f4c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      decorative copy 2_0: 2139123723
+      decorative copy 2_1: -737692729
+      decorative copy 2_10: 2018887016
+      decorative copy 2_11: -1909079266
+      decorative copy 2_12: -1944072585
+      decorative copy 2_13: 1830027103
+      decorative copy 2_14: -269642656
+      decorative copy 2_15: -579104214
+      decorative copy 2_16: 918849853
+      decorative copy 2_17: -1240019773
+      decorative copy 2_18: -694672926
+      decorative copy 2_19: -1215330094
+      decorative copy 2_2: -74180672
+      decorative copy 2_20: -1345961212
+      decorative copy 2_21: -1565855385
+      decorative copy 2_22: 1971557940
+      decorative copy 2_23: 1017438892
+      decorative copy 2_24: -470211140
+      decorative copy 2_25: 2062951930
+      decorative copy 2_26: 749693778
+      decorative copy 2_27: -1363637967
+      decorative copy 2_28: 1827583066
+      decorative copy 2_29: -754859960
+      decorative copy 2_3: -1630180915
+      decorative copy 2_30: 740532138
+      decorative copy 2_31: 1700825367
+      decorative copy 2_32: 832132101
+      decorative copy 2_33: 391387712
+      decorative copy 2_34: -1158846989
+      decorative copy 2_35: 1212709190
+      decorative copy 2_36: 1779320292
+      decorative copy 2_37: -2062781043
+      decorative copy 2_38: 367600304
+      decorative copy 2_39: -1656842498
+      decorative copy 2_4: -849282791
+      decorative copy 2_40: -171146129
+      decorative copy 2_41: -1778249349
+      decorative copy 2_42: -768425387
+      decorative copy 2_43: -1556091858
+      decorative copy 2_44: -1189415227
+      decorative copy 2_45: -1069108965
+      decorative copy 2_46: -1010284648
+      decorative copy 2_47: -1047435621
+      decorative copy 2_48: -140155574
+      decorative copy 2_49: -1518066056
+      decorative copy 2_5: -329097
+      decorative copy 2_50: -740024704
+      decorative copy 2_51: 793966368
+      decorative copy 2_52: 1087716774
+      decorative copy 2_53: 734056455
+      decorative copy 2_54: 2075031168
+      decorative copy 2_55: 1007393725
+      decorative copy 2_56: -797035383
+      decorative copy 2_57: -387270702
+      decorative copy 2_58: 1983094051
+      decorative copy 2_59: -1539855548
+      decorative copy 2_6: 1472168345
+      decorative copy 2_60: -418812433
+      decorative copy 2_61: 2129681531
+      decorative copy 2_62: 1549866430
+      decorative copy 2_63: -456973048
+      decorative copy 2_64: 1644122578
+      decorative copy 2_65: -154394292
+      decorative copy 2_66: 2067789568
+      decorative copy 2_67: 1268392739
+      decorative copy 2_68: 731149993
+      decorative copy 2_69: -1216477062
+      decorative copy 2_7: 526733672
+      decorative copy 2_70: 215381627
+      decorative copy 2_71: -1404058237
+      decorative copy 2_72: -2013252892
+      decorative copy 2_73: 949417317
+      decorative copy 2_74: 1711975593
+      decorative copy 2_75: 1168386767
+      decorative copy 2_76: -1928898032
+      decorative copy 2_77: 522443776
+      decorative copy 2_78: -529696160
+      decorative copy 2_79: 1263198325
+      decorative copy 2_8: 1257220477
+      decorative copy 2_80: -1183184881
+      decorative copy 2_81: -1564256919
+      decorative copy 2_82: 534874151
+      decorative copy 2_83: 1518004911
+      decorative copy 2_9: 1154783556
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
