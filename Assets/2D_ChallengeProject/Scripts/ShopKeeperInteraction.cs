@@ -20,9 +20,7 @@ public class ShopkeeperInteraction : MonoBehaviour
         {
             isPlayerInRange = true;
             // Optionally show a prompt (e.g., "Press E to interact")
-
-            // to make his face return to the player.
-            //this.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+            //this.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0)); /
         }
     }
 

@@ -9,6 +9,7 @@ public class FadeController : MonoBehaviour
     public float fadeDuration = 1.0f;
     public Camera mainCamera;
     public Camera castleCamera;
+    public Canvas fadeCanvas; // Reference to the Fade Out Canvas
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class FadeController : MonoBehaviour
         SetFadeImageAlpha(0f);
         //StartCoroutine(FadeOut());
         castleCamera.gameObject.SetActive(false);
+        fadeCanvas.gameObject.SetActive(false);
     }
 
     public void FadeInAndSwitchCamera(bool toCastle)
@@ -33,6 +35,7 @@ public class FadeController : MonoBehaviour
             // Switch to castle camera
             mainCamera.gameObject.SetActive(false);
             castleCamera.gameObject.SetActive(true);
+            fadeCanvas.gameObject.SetActive(true);
             mainCamera.GetComponent<AudioListener>().enabled = false;
             castleCamera.GetComponent<AudioListener>().enabled = true;
         }
@@ -41,6 +44,7 @@ public class FadeController : MonoBehaviour
             // Switch back to main camera
             castleCamera.gameObject.SetActive(false);
             mainCamera.gameObject.SetActive(true);
+            fadeCanvas.gameObject.SetActive(false);
             castleCamera.GetComponent<AudioListener>().enabled = false;
             mainCamera.GetComponent<AudioListener>().enabled = true;
         }
