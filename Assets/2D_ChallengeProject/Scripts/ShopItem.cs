@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopItem : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class ShopItem : MonoBehaviour
     public GameObject player; // Reference to the player
 
     private ShopManager shopManager;
+    private bool isPurchased = false;
 
     void Start()
     {
@@ -19,16 +21,26 @@ public class ShopItem : MonoBehaviour
 
     public void BuyItem()
     {
-        if (shopManager.playerGold >= price)
+        if (!isPurchased && shopManager.playerGold >= price)
         {
             shopManager.playerGold -= price;
             shopManager.UpdatePlayerGold();
             EquipItem();
+            isPurchased = true;
+            ShowEquipUnequipButtons();
         }
     }
 
     void EquipItem()
     {
         player.GetComponent<PlayerInventory>().EquipItem(itemSprite);
+    }
+
+    void ShowEquipUnequipButtons()
+    {
+        Button equipButton = player.GetComponent<PlayerInventory>().equipButton;
+        Button unequipButton = player.GetComponent<PlayerInventory>().unequipButton;
+        equipButton.gameObject.SetActive(true);
+        unequipButton.gameObject.SetActive(true);
     }
 }
