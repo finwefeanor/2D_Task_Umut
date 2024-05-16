@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class CastleInteraction : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class CastleInteraction : MonoBehaviour
                 castleMusic.Play();
             }
 
-            fadeController.FadeInAndSwitchCamera();
+            fadeController.FadeInAndSwitchCamera(true);
         }
     }
 
@@ -50,6 +51,7 @@ public class CastleInteraction : MonoBehaviour
             }
             musicManager.generalMusic.Play();
             //  implement switching back to the main camera here
+            fadeController.FadeInAndSwitchCamera(false);
         }
     }
 }

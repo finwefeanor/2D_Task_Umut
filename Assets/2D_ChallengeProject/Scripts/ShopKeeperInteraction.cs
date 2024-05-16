@@ -20,7 +20,9 @@ public class ShopkeeperInteraction : MonoBehaviour
         {
             isPlayerInRange = true;
             // Optionally show a prompt (e.g., "Press E to interact")
-            this.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+
+            // to make his face return to the player.
+            //this.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
         }
     }
 
@@ -31,7 +33,7 @@ public class ShopkeeperInteraction : MonoBehaviour
             isPlayerInRange = false;
             // Optionally hide the prompt
         }
-        this.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        //this.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
     }
 
     void OpenShop()

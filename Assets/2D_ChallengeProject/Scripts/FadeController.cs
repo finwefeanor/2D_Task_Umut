@@ -18,21 +18,32 @@ public class FadeController : MonoBehaviour
         castleCamera.gameObject.SetActive(false);
     }
 
-    public void FadeInAndSwitchCamera()
+    public void FadeInAndSwitchCamera(bool toCastle)
     {
-        StartCoroutine(FadeInAndSwitch());
+        StartCoroutine(FadeInAndSwitch(toCastle));
     }
 
-    IEnumerator FadeInAndSwitch()
+    IEnumerator FadeInAndSwitch(bool toCastle)
     {
         // Fade in to black
         yield return StartCoroutine(FadeToAlpha(1.0f));
 
-        // Switch to castle camera
-        mainCamera.gameObject.SetActive(false);
-        castleCamera.gameObject.SetActive(true);
-        mainCamera.GetComponent<AudioListener>().enabled = false;
-        castleCamera.GetComponent<AudioListener>().enabled = true;
+        if (toCastle)
+        {
+            // Switch to castle camera
+            mainCamera.gameObject.SetActive(false);
+            castleCamera.gameObject.SetActive(true);
+            mainCamera.GetComponent<AudioListener>().enabled = false;
+            castleCamera.GetComponent<AudioListener>().enabled = true;
+        }
+        else
+        {
+            // Switch back to main camera
+            castleCamera.gameObject.SetActive(false);
+            mainCamera.gameObject.SetActive(true);
+            castleCamera.GetComponent<AudioListener>().enabled = false;
+            mainCamera.GetComponent<AudioListener>().enabled = true;
+        }
 
         // Fade out from black
         yield return StartCoroutine(FadeToAlpha(0.0f));
