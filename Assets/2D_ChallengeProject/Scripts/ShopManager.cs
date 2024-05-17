@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ShopManager : MonoBehaviour
 {
-    public TextMeshProUGUI playerGoldText; // Ensure this is TextMeshProUGUI
+    public TextMeshProUGUI playerGoldText; // 
     public int playerGold = 100;
     public GameObject itemButtonPrefab; // Prefab for the item button
     public Transform shopContent; // Content parent for the shop items
@@ -34,6 +34,12 @@ public class ShopManager : MonoBehaviour
         AddShopItem("Shirt", 30, itemIcon, itemSprite);
     }
 
+    public void AddGold(int amount)
+    {
+        playerGold += amount;
+        UpdatePlayerGold();
+    }
+
     void AddShopItem(string name, int price, Sprite icon, Sprite sprite)
     {
         GameObject itemButton = Instantiate(itemButtonPrefab, shopContent);
@@ -43,6 +49,11 @@ public class ShopManager : MonoBehaviour
         shopItem.itemIcon = icon;
         shopItem.itemSprite = sprite;
         shopItem.player = FindObjectOfType<PlayerController>().gameObject;
+
+        // Assuming the prefab has an Image component for showing the item icon
+        itemButton.GetComponentInChildren<Image>().sprite = icon;  // Ensure this component exists
+
+        // Assuming the prefab has a TextMeshProUGUI component for showing the name and price
         itemButton.GetComponentInChildren<TextMeshProUGUI>().text = name + " - " + price + "G";
 
         // Ensure the button triggers the BuyItem method

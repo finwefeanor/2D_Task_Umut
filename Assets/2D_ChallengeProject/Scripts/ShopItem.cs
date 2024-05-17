@@ -27,9 +27,15 @@ public class ShopItem : MonoBehaviour
             shopManager.UpdatePlayerGold();
             EquipItem();
             isPurchased = true;
+            player.GetComponent<PlayerInventory>().AddItemToInventory(itemSprite, price);
             ShowEquipUnequipButtons();
         }
     }
+
+    //public void AddShopItem()
+    //{
+    //    itemButton.transform.Find("Icon").GetComponent<Image>().sprite = icon;
+    //}
 
     void EquipItem()
     {
