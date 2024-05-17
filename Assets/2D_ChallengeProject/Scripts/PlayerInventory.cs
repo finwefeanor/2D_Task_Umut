@@ -12,8 +12,7 @@ public class PlayerInventory : MonoBehaviour
     public Button equipButton; // Reference to the Equip button
     public Button unequipButton; // Reference to the Unequip button
 
-    void Start()
-    {
+    void Start()   {
         
 
         // Set the default sprite initially

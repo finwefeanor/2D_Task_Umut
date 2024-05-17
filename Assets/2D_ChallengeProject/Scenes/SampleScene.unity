@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 43235559}
   - component: {fileID: 43235560}
   - component: {fileID: 43235561}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Dragon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,15 +574,13 @@ MonoBehaviour:
   enemyGetHitSound: {fileID: 800728642}
   enemyAttackSound: {fileID: 1147749555}
   enemyDieSound: {fileID: 64226756}
---- !u!61 &43235561
-BoxCollider2D:
+--- !u!135 &43235561
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43235556}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -591,34 +589,12 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 1.6}
-    newSize: {x: 1.6, y: 1.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.6}
-  m_EdgeRadius: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.8
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &56165834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,8 +1413,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 421863352}
   m_HandleRect: {fileID: 421863351}
   m_Direction: 0
-  m_Value: 0.000040085033
-  m_Size: 0.9435952
+  m_Value: 0.000040731513
+  m_Size: 0.9435951
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6844,7 +6820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.7, y: -17.25}
+  m_AnchoredPosition: {x: 16.9, y: -18.3}
   m_SizeDelta: {x: 159.8, y: 121.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &760843574
@@ -6894,8 +6870,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
-  m_fontSizeBase: 0.5
+  m_fontSize: 0.3
+  m_fontSizeBase: 0.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7626,7 +7602,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 15
   m_TargetDisplay: 0
 --- !u!1 &842087626
 GameObject:
@@ -8310,8 +8286,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1492582866}
   m_HandleRect: {fileID: 1492582865}
   m_Direction: 2
-  m_Value: -0.0000089735595
-  m_Size: 0.6608902
+  m_Value: -0.000009908304
+  m_Size: 0.6789142
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8856,6 +8832,7 @@ GameObject:
   - component: {fileID: 952605442}
   - component: {fileID: 952605443}
   - component: {fileID: 952605444}
+  - component: {fileID: 952605445}
   m_Layer: 6
   m_Name: DarkWizard
   m_TagString: Untagged
@@ -9007,6 +8984,28 @@ MonoBehaviour:
   npcText: {fileID: 2108542367}
   detectionRadius: 3
   message: I am going to destroy you!!!
+--- !u!114 &952605445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952605439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6280d7edb91faa74fa65641b29f4d34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  attackDamage: 10
+  attackRange: 1
+  attackRate: 1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  enemyGetHitSound: {fileID: 800728642}
+  enemyAttackSound: {fileID: 1147749555}
+  enemyDieSound: {fileID: 64226756}
 --- !u!1 &961586472
 GameObject:
   m_ObjectHideFlags: 0
@@ -11590,6 +11589,7 @@ GameObject:
   - component: {fileID: 1275568960}
   - component: {fileID: 1275568959}
   - component: {fileID: 1275568961}
+  - component: {fileID: 1275568962}
   m_Layer: 9
   m_Name: Muzzleflash2
   m_TagString: Untagged
@@ -11685,6 +11685,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1275568962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275568958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6280d7edb91faa74fa65641b29f4d34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30000
+  attackDamage: 10
+  attackRange: 2
+  attackRate: 1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  enemyGetHitSound: {fileID: 1570964223}
+  enemyAttackSound: {fileID: 1147749555}
+  enemyDieSound: {fileID: 64226756}
 --- !u!1 &1310005294
 GameObject:
   m_ObjectHideFlags: 0
@@ -13054,7 +13076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00048589706, y: 40.810345}
+  m_AnchoredPosition: {x: -0.00048589706, y: 40.81043}
   m_SizeDelta: {x: 11.800487, y: 127.1}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1501741081
@@ -13249,7 +13271,8 @@ GameObject:
   - component: {fileID: 1521373553}
   - component: {fileID: 1521373557}
   - component: {fileID: 1521373558}
-  m_Layer: 9
+  - component: {fileID: 1521373559}
+  m_Layer: 6
   m_Name: Dragon (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13462,6 +13485,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!135 &1521373559
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521373552}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.8
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1550755567
 GameObject:
   m_ObjectHideFlags: 0
@@ -20298,7 +20342,8 @@ GameObject:
   - component: {fileID: 1912317983}
   - component: {fileID: 1912317982}
   - component: {fileID: 1912317981}
-  m_Layer: 9
+  - component: {fileID: 1912317985}
+  m_Layer: 6
   m_Name: Dragon (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20415,6 +20460,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 164359177}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1912317985
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912317980}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.8
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1916130597
 GameObject:
   m_ObjectHideFlags: 0
