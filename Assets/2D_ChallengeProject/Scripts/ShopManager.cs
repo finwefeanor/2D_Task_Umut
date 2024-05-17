@@ -14,6 +14,10 @@ public class ShopManager : MonoBehaviour
     // These might be missing or not initialized correctly
     public Sprite itemIcon; // Example sprite for icon, should be assigned in inspector
     public Sprite itemSprite; // Example sprite for item, should be assigned in inspector
+    public Sprite hatIcon;
+    public Sprite shirtIcon;
+    public Sprite hatItemSprite;
+    public Sprite shirtItemSprite;
 
 
     void Start()
@@ -30,8 +34,8 @@ public class ShopManager : MonoBehaviour
     void PopulateShop()
     {
         // Example items
-        AddShopItem("Hat", 20, itemIcon, itemSprite);
-        AddShopItem("Shirt", 30, itemIcon, itemSprite);
+        AddShopItem("Hat", 20, hatIcon, hatItemSprite);
+        AddShopItem("Shirt", 30, shirtIcon, shirtItemSprite);
     }
 
     public void AddGold(int amount)
@@ -50,13 +54,37 @@ public class ShopManager : MonoBehaviour
         shopItem.itemSprite = sprite;
         shopItem.player = FindObjectOfType<PlayerController>().gameObject;
 
-        // Assuming the prefab has an Image component for showing the item icon
-        itemButton.GetComponentInChildren<Image>().sprite = icon;  // Ensure this component exists
+        // Correctly find and set the image
+        Image itemImage = itemButton.GetComponentInChildren<Image>(); // Make sure this references the correct Image component
+        if (itemImage != null)
+        {
+            itemImage.sprite = icon;
+        }
+        else
+        {
+            Debug.LogError("No Image component found on the item button prefab!");
+        }
 
-        // Assuming the prefab has a TextMeshProUGUI component for showing the name and price
-        itemButton.GetComponentInChildren<TextMeshProUGUI>().text = name + " - " + price + "G";
+        // Set the text
+        TextMeshProUGUI itemText = itemButton.GetComponentInChildren<TextMeshProUGUI>();
+        if (itemText != null)
+        {
+            itemText.text = name + " - " + price + "G";
+        }
+        else
+        {
+            Debug.LogError("No TextMeshProUGUI component found on the item button prefab!");
+        }
 
-        // Ensure the button triggers the BuyItem method
-        itemButton.GetComponent<Button>().onClick.AddListener(shopItem.BuyItem);
+        // Add the BuyItem method to the button's onClick event
+        Button button = itemButton.GetComponent<Button>();
+        if (button != null)
+        {
+            button.onClick.AddListener(shopItem.BuyItem);
+        }
+        else
+        {
+            Debug.LogError("No Button component found on the item button prefab!");
+        }
     }
 }

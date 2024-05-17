@@ -25,10 +25,10 @@ public class ShopItem : MonoBehaviour
         {
             shopManager.playerGold -= price;
             shopManager.UpdatePlayerGold();
-            EquipItem();
+            //EquipItem();
             isPurchased = true;
             player.GetComponent<PlayerInventory>().AddItemToInventory(itemSprite, price);
-            ShowEquipUnequipButtons();
+            //ShowEquipUnequipButtons();
         }
     }
 
@@ -37,16 +37,16 @@ public class ShopItem : MonoBehaviour
     //    itemButton.transform.Find("Icon").GetComponent<Image>().sprite = icon;
     //}
 
-    void EquipItem()
-    {
-        player.GetComponent<PlayerInventory>().EquipItem(itemSprite);
-    }
+    //void EquipItem()
+    //{
+    //    player.GetComponent<PlayerInventory>().EquipItem(itemSprite);
+    //}
 
-    void ShowEquipUnequipButtons()
-    {
-        Button equipButton = player.GetComponent<PlayerInventory>().equipButton;
-        Button unequipButton = player.GetComponent<PlayerInventory>().unequipButton;
-        equipButton.gameObject.SetActive(true);
-        unequipButton.gameObject.SetActive(true);
-    }
+    //void ShowEquipUnequipButtons()
+    //{
+    //    Button equipButton = player.GetComponent<PlayerInventory>().equipButton;
+    //    Button unequipButton = player.GetComponent<PlayerInventory>().unequipButton;
+    //    equipButton.gameObject.SetActive(true);
+    //    unequipButton.gameObject.SetActive(true);
+    //}
 }
