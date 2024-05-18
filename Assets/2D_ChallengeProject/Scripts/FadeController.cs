@@ -16,25 +16,12 @@ public class FadeController : MonoBehaviour
         // Ensure the image is not black in the beginning
         SetFadeImageAlpha(0f);
         //StartCoroutine(FadeOut());
-        //castleCamera.gameObject.SetActive(false);
-        //fadeCanvas.gameObject.SetActive(false);
-    }
-
-    public void ShowFadeEffect()
-    {
-        fadeCanvas.gameObject.SetActive(true); // Ensure the canvas is active
-        fadeImage.enabled = true; // Show the fade image
-    }
-
-    public void HideFadeEffect()
-    {
-        fadeImage.enabled = false; // Hide the fade image
-        fadeCanvas.gameObject.SetActive(false); // Optionally deactivate the canvas if it's not needed
+        castleCamera.gameObject.SetActive(false);
+        fadeCanvas.gameObject.SetActive(false);
     }
 
     public void FadeInAndSwitchCamera(bool toCastle)
     {
-        ShowFadeEffect();  // Ensure the fade effect is visible before starting
         StartCoroutine(FadeInAndSwitch(toCastle));
     }
 
@@ -48,7 +35,7 @@ public class FadeController : MonoBehaviour
             // Switch to castle camera
             mainCamera.gameObject.SetActive(false);
             castleCamera.gameObject.SetActive(true);
-            //fadeCanvas.gameObject.SetActive(true);
+            fadeCanvas.gameObject.SetActive(true);
             mainCamera.GetComponent<AudioListener>().enabled = false;
             castleCamera.GetComponent<AudioListener>().enabled = true;
         }
@@ -57,7 +44,7 @@ public class FadeController : MonoBehaviour
             // Switch back to main camera
             castleCamera.gameObject.SetActive(false);
             mainCamera.gameObject.SetActive(true);
-            //fadeCanvas.gameObject.SetActive(false);
+            fadeCanvas.gameObject.SetActive(false);
             castleCamera.GetComponent<AudioListener>().enabled = false;
             mainCamera.GetComponent<AudioListener>().enabled = true;
         }
