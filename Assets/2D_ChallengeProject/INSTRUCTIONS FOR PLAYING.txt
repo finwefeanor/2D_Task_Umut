@@ -1,0 +1,13 @@
+Instructions for player controller
+
+WASD for movement
+
+I for inventory
+
+E for some interaction especially with shopkeeper and some npcs
+
+Space for attack
+
+Player Dies quickly if not wearing armor
+
+// Further implementations wip

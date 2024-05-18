@@ -54,11 +54,11 @@ public class ShopManager : MonoBehaviour
         shopItem.price = price;
         shopItem.itemIcon = icon;
         shopItem.itemSprite = sprite;
-        shopItem.itemType = type;  // Ensure this is properly implemented in ShopItem
+        shopItem.itemType = type;  
         shopItem.player = FindObjectOfType<PlayerController>().gameObject;
 
-        // Correctly find and set the image
-        Image itemImage = itemButton.GetComponentInChildren<Image>(); // Make sure this references the correct Image component
+        //  find and set the image
+        Image itemImage = itemButton.GetComponentInChildren<Image>(); // references the correct Image component
         if (itemImage != null)
         {
             itemImage.sprite = icon;
@@ -79,7 +79,7 @@ public class ShopManager : MonoBehaviour
             Debug.LogError("No TextMeshProUGUI component found on the item button prefab!");
         }
 
-        // Add the BuyItem method to the button's onClick event
+        // Add  BuyItem method to the buttons onClick event
         Button button = itemButton.GetComponent<Button>();
         if (button != null)
         {

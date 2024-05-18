@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (player != null)
         {
-            // Set the camera's position to the player's position with the offset
+           
             transform.position = player.position + offset;
         }
     }

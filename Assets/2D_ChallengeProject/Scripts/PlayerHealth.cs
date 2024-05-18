@@ -9,12 +9,13 @@ public class PlayerHealth : MonoBehaviour
     public AudioSource playerHitSound;
     public SpriteRenderer clothesRenderer;
     public AudioSource playerDieSound;
+    public int additionalHatArmorReduction = 3;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
         {
-            TakeDamage(20); // An Example damage value
+            TakeDamage(20); 
         }
     }
 
@@ -41,9 +42,9 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player has died");
-        // Implement player death logic (e.g., reload scene, show game over screen)
+        // Implement player death logic  reload scene, show game over screen etc
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
-        // Example: Reload the current scene
+        // Example: Reload the current scene some end game animation later
         StartCoroutine(HandleDeath());
         
 
@@ -57,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
             playerDieSound.Play();
         }
 
-        // Wait for the duration of the death sound or a fixed time (e.g., 2-3 seconds)
+        // Wait for the duration of the death sound  2-3 seconds
         yield return new WaitForSeconds(playerDieSound != null ? playerDieSound.clip.length : 3.0f);
 
         // Reload the current scene

@@ -49,7 +49,10 @@ public class CastleInteraction : MonoBehaviour
             {
                 castleMusic.Stop();
             }
-            musicManager.generalMusic.Play();
+            if (musicManager != null && musicManager.generalMusic != null)
+                musicManager.generalMusic.Play();
+            else
+                Debug.LogError("MusicManager or generalMusic is not properly initialized.");
             //  implement switching back to the main camera here
             fadeController.FadeInAndSwitchCamera(false);
         }

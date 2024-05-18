@@ -1,0 +1,6 @@
+wasd movement
+E is for some interaction, shopkeeper some npcs etc
+I for inventory
+Space attack
+
+player dies quickly if not wear armor

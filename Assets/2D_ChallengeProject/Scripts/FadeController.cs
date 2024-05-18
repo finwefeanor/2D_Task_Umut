@@ -9,11 +9,11 @@ public class FadeController : MonoBehaviour
     public float fadeDuration = 1.0f;
     public Camera mainCamera;
     public Camera castleCamera;
-    public Canvas fadeCanvas; // Reference to the Fade Out Canvas
+    public Canvas fadeCanvas; // Reference to Fade Out Canvas
 
     void Start()
     {
-        // Ensure the image is fully transparent at start
+        // Ensure the image is not black in the beginning
         SetFadeImageAlpha(0f);
         //StartCoroutine(FadeOut());
         castleCamera.gameObject.SetActive(false);

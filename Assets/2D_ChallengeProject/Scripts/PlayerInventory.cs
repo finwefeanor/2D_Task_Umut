@@ -39,9 +39,10 @@ public class PlayerInventory : MonoBehaviour
     {
 
         // These items are added to the player's inventory directly for testing or initial setup
-        AddItemToInventory(hatSprite, 10, InventoryItem.ItemType.Hat);  // Example price of 10
-        AddItemToInventory(armorSprite, 20, InventoryItem.ItemType.Clothes);  // Example price of 20
-        AddItemToInventory(axeSprite, 15, InventoryItem.ItemType.Weapon);  // Example price of 15
+        // normally idea is player starts without anything
+        //AddItemToInventory(hatSprite, 10, InventoryItem.ItemType.Hat);  // Example price of 10
+        //AddItemToInventory(armorSprite, 20, InventoryItem.ItemType.Clothes);  // Example price of 20
+        //AddItemToInventory(axeSprite, 15, InventoryItem.ItemType.Weapon);  // Example price of 15
 
 
         // Set the default sprite initially
@@ -274,6 +275,8 @@ public class PlayerInventory : MonoBehaviour
             accessory.transform.SetParent(attachmentPoint);
             //accessory.transform.localPosition = Vector3.zero;
             //accessory.transform.localScale = new Vector3(0.5f, 0.5f, 1);
+
+            accessory.layer = LayerMask.NameToLayer("Player"); //// Set the layer so we can see them inside the castle
 
             if (attachmentPoint == hatAttachmentPoint)
             {
