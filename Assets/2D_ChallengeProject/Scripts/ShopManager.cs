@@ -34,11 +34,10 @@ public class ShopManager : MonoBehaviour
     }
 
     void PopulateShop()
-    {
-        // Example items
-        AddShopItem("Hat", 20, hatIcon, hatItemSprite);
-        AddShopItem("Armor", 30, shirtIcon, shirtItemSprite);
-        AddShopItem("Axe", 20, axeIcon, axeItemSprite);
+    {// Example items available for purchase in the shop
+        AddShopItem("Hat", 20, hatIcon, hatItemSprite, InventoryItem.ItemType.Hat);
+        AddShopItem("Armor", 30, shirtIcon, shirtItemSprite, InventoryItem.ItemType.Clothes);
+        AddShopItem("Axe", 20, axeIcon, axeItemSprite, InventoryItem.ItemType.Weapon);
     }
 
     public void AddGold(int amount)
@@ -47,7 +46,7 @@ public class ShopManager : MonoBehaviour
         UpdatePlayerGold();
     }
 
-    void AddShopItem(string name, int price, Sprite icon, Sprite sprite)
+    void AddShopItem(string name, int price, Sprite icon, Sprite sprite, InventoryItem.ItemType type)
     {
         GameObject itemButton = Instantiate(itemButtonPrefab, shopContent);
         ShopItem shopItem = itemButton.GetComponent<ShopItem>();
@@ -55,6 +54,7 @@ public class ShopManager : MonoBehaviour
         shopItem.price = price;
         shopItem.itemIcon = icon;
         shopItem.itemSprite = sprite;
+        shopItem.itemType = type;  // Ensure this is properly implemented in ShopItem
         shopItem.player = FindObjectOfType<PlayerController>().gameObject;
 
         // Correctly find and set the image

@@ -13,6 +13,7 @@ public class ShopItem : MonoBehaviour
 
     private ShopManager shopManager;
     private bool isPurchased = false;
+    public InventoryItem.ItemType itemType;
 
     void Start()
     {
@@ -26,9 +27,10 @@ public class ShopItem : MonoBehaviour
             shopManager.playerGold -= price;
             shopManager.UpdatePlayerGold();
             //EquipItem();
-            //isPurchased = true;
-            player.GetComponent<PlayerInventory>().AddItemToInventory(itemSprite, price);
+            isPurchased = true;
+            player.GetComponent<PlayerInventory>().AddItemToInventory(itemSprite, price, itemType);
             //ShowEquipUnequipButtons();
+            isPurchased = true;
         }
     }
 

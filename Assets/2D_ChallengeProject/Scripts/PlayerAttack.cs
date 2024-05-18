@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask enemyLayers;
     public AudioSource attackSound;
     public ParticleSystem attackEffect;
+    public int axeBonusDamage = 5;
 
     void Update()
     {
@@ -19,6 +20,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack()
     {
+        int baseDamage = 10; // Base damage without any weapons
         // Play attack sound and effect
         if (attackSound != null) attackSound.Play();
         if (attackEffect != null) attackEffect.Play();

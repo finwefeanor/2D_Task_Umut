@@ -1716,6 +1716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 21300000, guid: 87850260d0f08224e887e1c55590c081, type: 3}
   sellPrice: 15
+  itemType: 0
 --- !u!212 &167132474
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1828,9 +1829,9 @@ Transform:
   m_GameObject: {fileID: 170375904}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0.3250168, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1059014108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3475,6 +3476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 21300000, guid: 87850260d0f08224e887e1c55590c081, type: 3}
   sellPrice: 15
+  itemType: 0
 --- !u!212 &311464816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8137,6 +8139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 21300000, guid: 87850260d0f08224e887e1c55590c081, type: 3}
   sellPrice: 15
+  itemType: 0
 --- !u!212 &851909499
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10077,6 +10080,10 @@ MonoBehaviour:
   inventoryGridPanel: {fileID: 1658526799}
   inventoryItemPrefab: {fileID: 4695331920606312091, guid: eab196c9544b87540b841173fe9b831a, type: 3}
   hatAttachmentPoint: {fileID: 170375905}
+  weaponAttachmentPoint: {fileID: 1341612883}
+  hatSprite: {fileID: 21300000, guid: 5087bdcc637973d41abbd18802fb23d3, type: 3}
+  armorSprite: {fileID: 1368561820, guid: adbb0cd1086a6d9459acb48819f69f54, type: 3}
+  axeSprite: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
   inventoryCapacity: 4
 --- !u!114 &1059014113
 MonoBehaviour:
@@ -13138,6 +13145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 21300000, guid: 87850260d0f08224e887e1c55590c081, type: 3}
   sellPrice: 15
+  itemType: 0
 --- !u!212 &1456068338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14532,6 +14540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 21300000, guid: 87850260d0f08224e887e1c55590c081, type: 3}
   sellPrice: 15
+  itemType: 0
 --- !u!212 &1605423132
 SpriteRenderer:
   m_ObjectHideFlags: 0
