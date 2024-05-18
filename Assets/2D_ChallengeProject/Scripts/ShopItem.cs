@@ -21,12 +21,12 @@ public class ShopItem : MonoBehaviour
 
     public void BuyItem()
     {
-        if (!isPurchased && shopManager.playerGold >= price)
+        if (shopManager.playerGold >= price)
         {
             shopManager.playerGold -= price;
             shopManager.UpdatePlayerGold();
             //EquipItem();
-            isPurchased = true;
+            //isPurchased = true;
             player.GetComponent<PlayerInventory>().AddItemToInventory(itemSprite, price);
             //ShowEquipUnequipButtons();
         }

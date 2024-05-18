@@ -18,6 +18,8 @@ public class ShopManager : MonoBehaviour
     public Sprite shirtIcon;
     public Sprite hatItemSprite;
     public Sprite shirtItemSprite;
+    public Sprite axeIcon;
+    public Sprite axeItemSprite;
 
 
     void Start()
@@ -35,7 +37,8 @@ public class ShopManager : MonoBehaviour
     {
         // Example items
         AddShopItem("Hat", 20, hatIcon, hatItemSprite);
-        AddShopItem("Shirt", 30, shirtIcon, shirtItemSprite);
+        AddShopItem("Armor", 30, shirtIcon, shirtItemSprite);
+        AddShopItem("Axe", 20, axeIcon, axeItemSprite);
     }
 
     public void AddGold(int amount)

@@ -16,6 +16,10 @@ public class PlayerInventory : MonoBehaviour
     public GameObject inventoryGridPanel;  // Reference to the grid panel in the UI
     public GameObject inventoryItemPrefab;  // Assign this in the Inspector
 
+    private InventoryItem currentlyEquippedItem = null;
+    public Transform hatAttachmentPoint; //for placing the hat etc
+
+
 
     public int inventoryCapacity = 4; // Example capacity
    
@@ -110,24 +114,50 @@ public class PlayerInventory : MonoBehaviour
     //    animator.SetLayerWeight(animator.GetLayerIndex("CharWithCloth"), 1); // Activates the clothing layer
     //}
 
-    public void EquipItem(InventoryItem item) //new equip method
+    //public void EquipItem(InventoryItem item) //new equip method
+    //{
+    //    // Set the new item sprite to the clothing renderer
+    //    clothesRenderer.sprite = item.sprite;
+    //    clothesRenderer.gameObject.SetActive(true);
+
+    //    animator.SetLayerWeight(animator.GetLayerIndex("CharWithCloth"), 1); // Activates the clothing layer
+
+    //    Debug.Log("Equipped: " + item.sprite.name);
+    //}
+
+    public void EquipItem(InventoryItem item)
     {
-        // Set the new item sprite to the clothing renderer
-        clothesRenderer.sprite = item.sprite;
-        clothesRenderer.gameObject.SetActive(true);
+        Debug.Log($"Trying to equip: {item.sprite.name}, Currently equipped: {(currentlyEquippedItem != null ? currentlyEquippedItem.sprite.name : "None")}");
 
-        animator.SetLayerWeight(animator.GetLayerIndex("CharWithCloth"), 1); // Activates the clothing layer
-
-        Debug.Log("Equipped: " + item.sprite.name);
+        if (currentlyEquippedItem == item)
+        {
+            Debug.Log("Unequipping from Inventory");
+            // Unequip the item
+            clothesRenderer.gameObject.SetActive(false);
+            animator.SetLayerWeight(animator.GetLayerIndex("CharWithCloth"), 0);
+            currentlyEquippedItem = null;
+        }
+        else
+        {
+            Debug.Log("Equipping from Inventory");
+            // Equip the new item
+            clothesRenderer.sprite = item.sprite;
+            clothesRenderer.gameObject.SetActive(true);
+            animator.SetLayerWeight(animator.GetLayerIndex("CharWithCloth"), 1);
+            currentlyEquippedItem = item;
+        }
     }
 
     public void EquipAccessory(InventoryItem item, Transform attachmentPoint)
     {
+        // Creates a new GameObject to hold the accessory sprite
         GameObject accessory = new GameObject(item.sprite.name);
         SpriteRenderer renderer = accessory.AddComponent<SpriteRenderer>();
         renderer.sprite = item.sprite;
-        accessory.transform.SetParent(attachmentPoint);
-        accessory.transform.localPosition = Vector3.zero; // Adjust this based on exact placement needs
+
+        // Set the accessory as a child of the attachment point
+        accessory.transform.SetParent(hatAttachmentPoint, false);
+        accessory.transform.localPosition = Vector3.zero;  // Adjust as necessary to fit correctly
     }
 
 
