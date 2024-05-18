@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public SpriteRenderer clothesRenderer;
     public AudioSource playerDieSound;
     public int additionalHatArmorReduction = 3;
+    private static bool isDying = false;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -41,11 +42,17 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player has died");
+        if (!isDying)
+        {
+            Debug.Log("Player has died");
+            isDying = true;
+            StartCoroutine(HandleDeath());
+        }
+        //Debug.Log("Player has died");
         // Implement player death logic  reload scene, show game over screen etc
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
         // Example: Reload the current scene some end game animation later
-        StartCoroutine(HandleDeath());
+        //StartCoroutine(HandleDeath());
         
 
     }
@@ -53,7 +60,7 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator HandleDeath()
     {
         // Play the death sound
-        if (playerDieSound != null)
+        if (playerDieSound != null && !playerDieSound.isPlaying)
         {
             playerDieSound.Play();
         }
@@ -61,6 +68,7 @@ public class PlayerHealth : MonoBehaviour
         // Wait for the duration of the death sound  2-3 seconds
         yield return new WaitForSeconds(playerDieSound != null ? playerDieSound.clip.length : 3.0f);
 
+        isDying = false; // Reset the flag if you intend to use the scene again later without reloading
         // Reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
