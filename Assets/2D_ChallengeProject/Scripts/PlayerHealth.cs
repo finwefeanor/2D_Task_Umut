@@ -52,8 +52,7 @@ public class PlayerHealth : MonoBehaviour
         // Implement player death logic  reload scene, show game over screen etc
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
         // Example: Reload the current scene some end game animation later
-        //StartCoroutine(HandleDeath());
-        
+        //StartCoroutine(HandleDeath());        
 
     }
 
@@ -72,4 +71,6 @@ public class PlayerHealth : MonoBehaviour
         // Reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+
 }

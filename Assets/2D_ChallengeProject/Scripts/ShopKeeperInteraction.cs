@@ -30,6 +30,7 @@ public class ShopkeeperInteraction : MonoBehaviour
         {
             isPlayerInRange = false;
             // Optionally hide the prompt
+            shopUIController.CloseShop();
         }
         //this.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
     }
