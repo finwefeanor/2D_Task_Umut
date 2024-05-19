@@ -4,7 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health = 100;
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar; // Reference to a health bar UI component (optional)
     public int armorReduction = 5; // Damage reduction if armor is equipped
     public AudioSource playerHitSound;
     public SpriteRenderer clothesRenderer;
@@ -12,6 +14,13 @@ public class PlayerHealth : MonoBehaviour
     public int additionalHatArmorReduction = 3;
     private static bool isDying = false;
     public PlayerInventory playerInventory;
+
+    void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth); // Initialize health bar (optional)
+        healthBar.SetHealth(currentHealth); // Set initial health
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -32,18 +41,27 @@ public class PlayerHealth : MonoBehaviour
         {
             damage -= additionalHatArmorReduction;  // Further reduce damage if hat is equipped
         }
-
-        health -= damage;
-        Debug.Log("Player health: " + health);
-
-        playerHitSound.Play();
+        currentHealth -= damage;
+        Debug.Log("Player health: " + currentHealth);
 
         if (playerHitSound != null) playerHitSound.Play();
 
-        if (health <= 0)
+        healthBar.SetHealth(currentHealth); // Update health bar
+
+        if (currentHealth <= 0)
         {
             Die();
         }
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        healthBar.SetHealth(currentHealth); // Update health bar
     }
 
     void Die()

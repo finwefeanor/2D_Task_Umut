@@ -20,8 +20,8 @@ public class PlayerInventory : MonoBehaviour
     public Transform weaponAttachmentPoint;
 
     private InventoryItem currentlyEquippedClothes;
-    private InventoryItem currentlyEquippedHatItem;
-    private InventoryItem currentlyEquippedWeaponItem;
+    //private InventoryItem currentlyEquippedHatItem;
+    //private InventoryItem currentlyEquippedWeaponItem;
 
     public InventoryItem CurrentlyEquippedHat { get; private set; }
     public InventoryItem CurrentlyEquippedWeapon { get; private set; }
@@ -126,12 +126,13 @@ public class PlayerInventory : MonoBehaviour
             {
                 UnequipClothes();
             }
-            else if (item == currentlyEquippedHatItem)
+            else if (item == CurrentlyEquippedHat)
             {
                 UnequipAccessory(hatAttachmentPoint);
             }
-            else if (item == currentlyEquippedWeaponItem)
+            else if (item == CurrentlyEquippedWeapon)
             {
+                
                 UnequipAccessory(weaponAttachmentPoint);
             }
             int sellPrice = Mathf.FloorToInt(item.purchasePrice * 0.5f); // Sells item as half of the purchase price.
@@ -206,8 +207,7 @@ public class PlayerInventory : MonoBehaviour
                 }
                 break;
             case InventoryItem.ItemType.Hat:
-                CurrentlyEquippedHat = item;
-                if (currentlyEquippedHatItem == item)
+                if (CurrentlyEquippedHat == item)
                 {
                     UnequipAccessory(hatAttachmentPoint);
                 }
@@ -218,8 +218,7 @@ public class PlayerInventory : MonoBehaviour
                 break;
             // Handle other types similarly
             case InventoryItem.ItemType.Weapon:
-                CurrentlyEquippedWeapon = item;
-                if (currentlyEquippedWeaponItem == item)
+                if (CurrentlyEquippedWeapon == item)
                 {
                     UnequipAccessory(weaponAttachmentPoint);
                 }
@@ -264,17 +263,19 @@ public class PlayerInventory : MonoBehaviour
         if (currentlyEquipped != null)
         {
             Destroy(currentlyEquipped);
+            CurrentlyEquippedWeapon = null; 
+            Debug.Log("Unequipping accessory: " + item.sprite.name);
             if (attachmentPoint == hatAttachmentPoint)
             {
                 currentlyEquippedHat = null;
-                currentlyEquippedHatItem = null;
+                CurrentlyEquippedHat = null;
             }
             else if (attachmentPoint == weaponAttachmentPoint)
             {
                 currentlyEquippedWeapon = null;
-                currentlyEquippedWeaponItem = null;
+                CurrentlyEquippedWeapon = null;
+                Debug.Log("Weapon unequipped: " + item.sprite.name);
             }
-            Debug.Log("Unequipping accessory: " + item.sprite.name);
         }
         else
         {
@@ -293,14 +294,16 @@ public class PlayerInventory : MonoBehaviour
                 accessory.transform.localPosition = new Vector3(0.0f, -0.15f, 1);
                 accessory.transform.localScale = new Vector3(0.55f, 0.55f, 1);
                 currentlyEquippedHat = accessory;
-                currentlyEquippedHatItem = item;
+                CurrentlyEquippedHat = item;
+                Debug.Log("Hat equipped: " + item.sprite.name);
             }
             else if (attachmentPoint == weaponAttachmentPoint)
             {
                 accessory.transform.localPosition = new Vector3(0.085f, 0.085f, 0);
                 accessory.transform.localScale = new Vector3(0.15f, 0.15f, 1);
                 currentlyEquippedWeapon = accessory;
-                currentlyEquippedWeaponItem = item;
+                CurrentlyEquippedWeapon = item;
+                Debug.Log("Weapon equipped: " + item.sprite.name);
             }
             Debug.Log("Equipping accessory: " + item.sprite.name);
         }
@@ -324,7 +327,7 @@ public class PlayerInventory : MonoBehaviour
 
     void UnequipAccessory(Transform attachmentPoint)
     {
-        Debug.Log("Unequipping accessory");
+        Debug.Log("Unequipping accessory"); // But I can see this line when uneqipped
         if (attachmentPoint.childCount > 0)
         {
             Destroy(attachmentPoint.GetChild(0).gameObject); // This removes the items on top of character visually
@@ -334,14 +337,15 @@ public class PlayerInventory : MonoBehaviour
         if (attachmentPoint == hatAttachmentPoint)
         {
             currentlyEquippedHat = null;   // Reset GameObject tracking for hat
-            currentlyEquippedHatItem = null;  // Reset InventoryItem tracking for hat
+            CurrentlyEquippedHat = null;  // Reset InventoryItem tracking for hat
             Debug.Log("Hat unequipped");
         }
         else if (attachmentPoint == weaponAttachmentPoint)
         {
-            currentlyEquippedWeapon = null;  // Reset GameObject tracking for weapon
-            currentlyEquippedWeaponItem = null;  // Reset InventoryItem tracking for weapon
-            Debug.Log("Weapon unequipped");
+            //Destroy(currentlyEquippedWeapon);
+            CurrentlyEquippedWeapon = null;
+            currentlyEquippedWeapon = null;
+            Debug.Log("Weapon fully unequipped");
         }
     }
 

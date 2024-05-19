@@ -13,6 +13,10 @@ public class PlayerAttack : MonoBehaviour
     public int axeBonusDamage = 5;
     public PlayerInventory playerInventory;
 
+    private void Start()
+    {
+        playerInventory = GetComponent<PlayerInventory>();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -23,24 +27,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack()
     {
-        int baseDamage = 10; // Base damage without any weapons
-
-        if (playerInventory.CurrentlyEquippedWeapon != null)
-        {
-            baseDamage += axeBonusDamage; // Add extra damage if a weapon is equipped
-            if (attackAxeSound != null)
-                attackAxeSound.Play(); // sound for axe attacks
-            if (attackAxeEffect != null)
-                attackAxeEffect.Play(); // Play effect  for axe attacks
-        }
-        else
-        {
-            // Play default attack sound and effect if no weapon is equipped
-            if (attackSound != null)
-                attackSound.Play();
-            if (attackEffect != null)
-                attackEffect.Play();
-        }
+        int totalDamage = CalculateDamage(); // Initialize total damage
 
         // Detect enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
@@ -53,8 +40,8 @@ public class PlayerAttack : MonoBehaviour
             Enemy enemyComponent = enemy.GetComponent<Enemy>();
             if (enemyComponent != null)
             {
-                enemyComponent.TakeDamage(attackDamage);
-                Debug.Log("Enemy took damage: " + attackDamage);
+                enemyComponent.TakeDamage(totalDamage);
+                Debug.Log("Enemy took damage: " + totalDamage);
             }
             else
             {
@@ -63,28 +50,53 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    int CalculateDamage()
+    {
+        int baseDamage = 10; // Base damage without any weapons
+        int totalDamage = baseDamage; // Initialize total damage
 
-    //void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("Enemy"))
-    //    {
-    //        // Apply damage to the enemy
-    //        Enemy enemy = other.GetComponent<Enemy>();
-    //        if (enemy != null)
-    //        {
-    //            enemy.TakeDamage(attackDamage);
-    //        }
-    //    }
-    //}
+        // Check if the player has a weapon equipped
+        if (playerInventory.CurrentlyEquippedWeapon != null && playerInventory.CurrentlyEquippedWeapon.type == InventoryItem.ItemType.Weapon)
+        {
+            totalDamage += axeBonusDamage; // Add extra damage if an axe is equipped
+            if (attackAxeSound != null)
+            {
+                attackAxeSound.Play(); // Play sound for axe attacks
+                Debug.Log("Playing Axe Sound");
+            }
+            if (attackAxeEffect != null)
+            {
+                attackAxeEffect.Play(); // Play effect for axe attacks
+                Debug.Log("Playing Axe Effect");
+            }
+        }
+        else
+        {
+            if (attackSound != null)
+            {
+                attackSound.Play(); // Play default attack sound
+                Debug.Log("Playing Default Attack Sound");
+            }
+            if (attackEffect != null)
+            {
+                attackEffect.Play(); // Play default attack effect
+                Debug.Log("Playing Default Attack Effect");
+            }
+        }
 
-    void OnDrawGizmosSelected()
+        Debug.Log("Total Damage: " + totalDamage);
+        return totalDamage;
+    }
+
+    // For visualization in the Editor
+    private void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
             return;
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
+    }    
 
 
 }
