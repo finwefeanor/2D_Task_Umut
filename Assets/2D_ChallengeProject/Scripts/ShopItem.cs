@@ -7,8 +7,8 @@ public class ShopItem : MonoBehaviour
 {
     public string itemName;
     public int price;
-    public Sprite itemIcon; // Icon for UI
-    public Sprite itemSprite; // Sprite for character
+    public Sprite itemIcon; // Sprite for Shop  inventory UI
+    public Sprite itemSprite; // Sprite for character inventory
     public GameObject player; // Reference to the player
 
     private ShopManager shopManager;

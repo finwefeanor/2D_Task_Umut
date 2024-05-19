@@ -7,8 +7,11 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPoint;
     public LayerMask enemyLayers;
     public AudioSource attackSound;
+    public AudioSource attackAxeSound;
     public ParticleSystem attackEffect;
+    public ParticleSystem attackAxeEffect;
     public int axeBonusDamage = 5;
+    public PlayerInventory playerInventory;
 
     void Update()
     {
@@ -21,9 +24,23 @@ public class PlayerAttack : MonoBehaviour
     void Attack()
     {
         int baseDamage = 10; // Base damage without any weapons
-        // Play attack sound and effect
-        if (attackSound != null) attackSound.Play();
-        if (attackEffect != null) attackEffect.Play();
+
+        if (playerInventory.CurrentlyEquippedWeapon != null)
+        {
+            baseDamage += axeBonusDamage; // Add extra damage if a weapon is equipped
+            if (attackAxeSound != null)
+                attackAxeSound.Play(); // sound for axe attacks
+            if (attackAxeEffect != null)
+                attackAxeEffect.Play(); // Play effect  for axe attacks
+        }
+        else
+        {
+            // Play default attack sound and effect if no weapon is equipped
+            if (attackSound != null)
+                attackSound.Play();
+            if (attackEffect != null)
+                attackEffect.Play();
+        }
 
         // Detect enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);

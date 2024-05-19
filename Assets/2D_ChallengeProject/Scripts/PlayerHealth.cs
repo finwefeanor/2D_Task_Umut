@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioSource playerDieSound;
     public int additionalHatArmorReduction = 3;
     private static bool isDying = false;
+    public PlayerInventory playerInventory;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -25,6 +26,11 @@ public class PlayerHealth : MonoBehaviour
         if (clothesRenderer.gameObject.activeSelf)
         {
             damage -= armorReduction; // Reduce damage if armor is equipped
+        }
+
+        if (playerInventory.CurrentlyEquippedHat != null)
+        {
+            damage -= additionalHatArmorReduction;  // Further reduce damage if hat is equipped
         }
 
         health -= damage;

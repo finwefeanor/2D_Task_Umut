@@ -31,11 +31,11 @@ public class NPCInteraction : MonoBehaviour
             {
                 if (playerInventory.HasClothesEquipped())
                 {
-                    dialogText.text = "You have nice clothes!";
+                    dialogText.text = "You have nice armor!";
                 }
                 else
                 {
-                    dialogText.text = "Go buy some clothes!";
+                    dialogText.text = "You are naked Go buy some armor!";
                 }
                 Debug.Log("Dialog text set: " + dialogText.text);
             }

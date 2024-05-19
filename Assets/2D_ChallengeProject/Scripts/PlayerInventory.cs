@@ -22,6 +22,10 @@ public class PlayerInventory : MonoBehaviour
     private InventoryItem currentlyEquippedClothes;
     private InventoryItem currentlyEquippedHatItem;
     private InventoryItem currentlyEquippedWeaponItem;
+
+    public InventoryItem CurrentlyEquippedHat { get; private set; }
+    public InventoryItem CurrentlyEquippedWeapon { get; private set; }
+
     private GameObject currentlyEquippedAccessory;
 
     public Sprite hatSprite;
@@ -40,20 +44,21 @@ public class PlayerInventory : MonoBehaviour
 
         // These items are added to the player's inventory directly for testing or initial setup
         // normally idea is player starts without anything
+
         //AddItemToInventory(hatSprite, 10, InventoryItem.ItemType.Hat);  // Example price of 10
         //AddItemToInventory(armorSprite, 20, InventoryItem.ItemType.Clothes);  // Example price of 20
         //AddItemToInventory(axeSprite, 15, InventoryItem.ItemType.Weapon);  // Example price of 15
 
 
-        // Set the default sprite initially
+        // Set the default sprite
         bodyRenderer.sprite = defaultSprite;
-        // Ensure the CharWithCloth layer is initially inactive
+
+        // Ensure clothrenderer is off at the beginning, so only player animation layer will work.
         animator.SetLayerWeight(animator.GetLayerIndex("CharWithCloth"), 0);
+        
         // Deactivate the clothes renderer initially
         clothesRenderer.gameObject.SetActive(false);
-        // Hide the Equip and Unequip buttons initially
-        //equipButton.gameObject.SetActive(false);
-        //unequipButton.gameObject.SetActive(false);
+ 
     }
 
 
@@ -82,13 +87,13 @@ public class PlayerInventory : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        // Instantiate a prefab for each item in the inventory
+        // Instantiate a prefab clone for each item in the inventory. When we buy stuff or collect
         foreach (InventoryItem item in inventoryItems)
         {
             GameObject itemIcon = Instantiate(inventoryItemPrefab, inventoryGridPanel.transform);
             itemIcon.GetComponent<Image>().sprite = item.sprite; // Set the item sprite
 
-            // Configure the sell button
+            // Configures the sell button
             Button sellButton = itemIcon.transform.Find("SellButton").GetComponent<Button>();
             if (sellButton != null)
             {
@@ -99,7 +104,7 @@ public class PlayerInventory : MonoBehaviour
                 Debug.LogError("Sell Button not found in the Inventory Item Prefab!");
             }
 
-            //Optionally configure the equip button
+            //configures the equip button
            Button equipButton = itemIcon.transform.Find("EquipButton").GetComponent<Button>();
             if (equipButton != null)
             {
@@ -111,6 +116,9 @@ public class PlayerInventory : MonoBehaviour
 
     public void SellItem(InventoryItem item)
     {
+        // later, add a flag here or other checks that player
+        // can sell stuff only when he is nearby shopkeeper's OnTriggerEnter
+
         if (inventoryItems.Contains(item))
         {
             inventoryItems.Remove(item);
@@ -187,7 +195,7 @@ public class PlayerInventory : MonoBehaviour
     {
         switch (item.type)
         {
-            case InventoryItem.ItemType.Clothes:
+            case InventoryItem.ItemType.Clothes:                
                 if (currentlyEquippedClothes == item)
                 {
                     UnequipClothes();
@@ -198,6 +206,7 @@ public class PlayerInventory : MonoBehaviour
                 }
                 break;
             case InventoryItem.ItemType.Hat:
+                CurrentlyEquippedHat = item;
                 if (currentlyEquippedHatItem == item)
                 {
                     UnequipAccessory(hatAttachmentPoint);
@@ -209,6 +218,7 @@ public class PlayerInventory : MonoBehaviour
                 break;
             // Handle other types similarly
             case InventoryItem.ItemType.Weapon:
+                CurrentlyEquippedWeapon = item;
                 if (currentlyEquippedWeaponItem == item)
                 {
                     UnequipAccessory(weaponAttachmentPoint);
@@ -317,7 +327,7 @@ public class PlayerInventory : MonoBehaviour
         Debug.Log("Unequipping accessory");
         if (attachmentPoint.childCount > 0)
         {
-            Destroy(attachmentPoint.GetChild(0).gameObject); // This removes the visual representation
+            Destroy(attachmentPoint.GetChild(0).gameObject); // This removes the items on top of character visually
         }
 
         // Reset specific accessory type based on the attachment point

@@ -11,15 +11,15 @@ public class ShopManager : MonoBehaviour
     public GameObject itemButtonPrefab; // Prefab for the item button
     public Transform shopContent; // Content parent for the shop items
 
-    // These might be missing or not initialized correctly
-    public Sprite itemIcon; // Example sprite for icon, should be assigned in inspector
-    public Sprite itemSprite; // Example sprite for item, should be assigned in inspector
-    public Sprite hatIcon;
+    
+    public Sprite itemIcon; // Example sprite for icon
+    public Sprite itemSprite; // Example sprite for item
+    public Sprite hatIcon; 
     public Sprite shirtIcon;
     public Sprite hatItemSprite;
     public Sprite shirtItemSprite;
-    public Sprite axeIcon;
-    public Sprite axeItemSprite;
+    public Sprite axeIcon; // Sprite for Shop  inventory UI
+    public Sprite axeItemSprite; // // Sprite for character inventory UI
 
 
     void Start()
