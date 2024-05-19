@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
             nextAttackTime = Time.time + 1f / attackRate;
         }
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage) //updated from PlayerAttack.cs
     {
         health -= damage;
         Debug.Log("Enemy health: " + health);

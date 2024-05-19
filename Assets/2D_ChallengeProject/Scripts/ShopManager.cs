@@ -66,7 +66,7 @@ public class ShopManager : MonoBehaviour
             // Conditionally adjust the size
             if (name == "Armor") // Check if it's the specific item that needs a larger icon
             {
-                itemImage.rectTransform.sizeDelta = new Vector2(300, 300); // Increase the size for the Armor icon
+                itemImage.rectTransform.sizeDelta = new Vector2(300, 300); // armors sprite is too small so Increase the size for the Armor icon
             }
             else
             {

@@ -8,9 +8,7 @@ public class PlayerInventory : MonoBehaviour
     public SpriteRenderer clothesRenderer; // Reference to the clothing sprite renderer
     public Sprite defaultSprite; // Default sprite when no item is equipped
     public Animator animator; // Reference to the player's Animator
-    //public Button equipButton; // Reference to the Equip button
-    //public Button unequipButton; // Reference to the Unequip button
-    //public List<Sprite> inventoryItems = new List<Sprite>(); // Holds inventory items
+
     public List<InventoryItem> inventoryItems = new List<InventoryItem>();
     public GameObject inventoryGridPanel;  // Reference to the grid panel in the UI
     public GameObject inventoryItemPrefab;  // Assign this in the Inspector
@@ -20,8 +18,6 @@ public class PlayerInventory : MonoBehaviour
     public Transform weaponAttachmentPoint;
 
     private InventoryItem currentlyEquippedClothes;
-    //private InventoryItem currentlyEquippedHatItem;
-    //private InventoryItem currentlyEquippedWeaponItem;
 
     public InventoryItem CurrentlyEquippedHat { get; private set; }
     public InventoryItem CurrentlyEquippedWeapon { get; private set; }
@@ -36,13 +32,13 @@ public class PlayerInventory : MonoBehaviour
 
 
 
-    public int inventoryCapacity = 4; // Example capacity
+    public int inventoryCapacity = 4; 
    
 
     void Start()
     {
 
-        // These items are added to the player's inventory directly for testing or initial setup
+        // These items are added to the player's inventory directly for testing purposes or initial setup
         // normally idea is player starts without anything
 
         //AddItemToInventory(hatSprite, 10, InventoryItem.ItemType.Hat);  // Example price of 10
@@ -216,7 +212,7 @@ public class PlayerInventory : MonoBehaviour
                     EquipAccessory(item, hatAttachmentPoint);
                 }
                 break;
-            // Handle other types similarly
+
             case InventoryItem.ItemType.Weapon:
                 if (CurrentlyEquippedWeapon == item)
                 {
@@ -284,8 +280,6 @@ public class PlayerInventory : MonoBehaviour
             renderer.sprite = item.sprite;
             renderer.sortingOrder = 25;
             accessory.transform.SetParent(attachmentPoint);
-            //accessory.transform.localPosition = Vector3.zero;
-            //accessory.transform.localScale = new Vector3(0.5f, 0.5f, 1);
 
             accessory.layer = LayerMask.NameToLayer("Player"); //// Set the layer so we can see them inside the castle
 
@@ -314,20 +308,10 @@ public class PlayerInventory : MonoBehaviour
 
 
 
-    //void UnequipAccessory(Transform attachmentPoint)
-    //{
-    //    Debug.Log("Unequipping accessory");
-    //    if (attachmentPoint.childCount > 0)
-    //    {
-    //        Destroy(attachmentPoint.GetChild(0).gameObject); // This removes the visual representation
-    //    }
-    //    currentlyEquippedHat = null;
-    //    currentlyEquippedWeapon = null;
-    //}
 
     void UnequipAccessory(Transform attachmentPoint)
     {
-        Debug.Log("Unequipping accessory"); // But I can see this line when uneqipped
+        Debug.Log("Unequipping accessory"); 
         if (attachmentPoint.childCount > 0)
         {
             Destroy(attachmentPoint.GetChild(0).gameObject); // This removes the items on top of character visually
@@ -348,20 +332,6 @@ public class PlayerInventory : MonoBehaviour
             Debug.Log("Weapon fully unequipped");
         }
     }
-
-
-
-    //public void EquipAccessory(InventoryItem item, Transform attachmentPoint)
-    //{
-    //    // Creates a new GameObject to hold the accessory sprite
-    //    GameObject accessory = new GameObject(item.sprite.name);
-    //    SpriteRenderer renderer = accessory.AddComponent<SpriteRenderer>();
-    //    renderer.sprite = item.sprite;
-
-    //    // Set the accessory as a child of the attachment point
-    //    accessory.transform.SetParent(hatAttachmentPoint, false);
-    //    accessory.transform.localPosition = Vector3.zero;  // Adjust as necessary to fit correctly
-    //}
 
 
 

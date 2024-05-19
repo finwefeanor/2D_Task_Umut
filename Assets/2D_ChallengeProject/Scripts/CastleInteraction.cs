@@ -13,17 +13,7 @@ public class CastleInteraction : MonoBehaviour
         musicManager = FindObjectOfType<MusicManager>();
         // Get the AudioSource component attached to the castle
     }
-
-
-
-    //void Update()
-    //{
-    //    if (isPlayerInRange && !audioSource.isPlaying)
-    //    {
-    //        // Play the music if the player is in range and the music is not already playing
-    //        audioSource.Play();
-    //    }
-    //}
+       
 
     void OnTriggerEnter2D(Collider2D other)
     {

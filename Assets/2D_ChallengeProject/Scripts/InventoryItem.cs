@@ -2,29 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//public class InventoryItem
-//{
-//    public Sprite sprite;
-//    public int purchasePrice;
-
-//    public InventoryItem(Sprite sprite, int purchasePrice)
-//    {
-//        this.sprite = sprite;
-//        this.purchasePrice = purchasePrice;
-//    }
-//    // Start is called before the first frame update
-//    void Start()
-//    {
-
-//    }
-
-//    // Update is called once per frame
-//    void Update()
-//    {
-
-//    }
-//}
-
 public class InventoryItem
 {
     public enum ItemType
@@ -32,7 +9,7 @@ public class InventoryItem
         Clothes,
         Hat,
         Weapon,
-        // Add more if needed
+        // Add more later
     }
 
     public Sprite sprite;

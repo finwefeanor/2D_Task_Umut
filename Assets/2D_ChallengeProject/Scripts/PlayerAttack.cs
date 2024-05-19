@@ -55,18 +55,18 @@ public class PlayerAttack : MonoBehaviour
         int baseDamage = 10; // Base damage without any weapons
         int totalDamage = baseDamage; // Initialize total damage
 
-        // Check if the player has a weapon equipped
+        // Check if the player has weapon equipped
         if (playerInventory.CurrentlyEquippedWeapon != null && playerInventory.CurrentlyEquippedWeapon.type == InventoryItem.ItemType.Weapon)
         {
             totalDamage += axeBonusDamage; // Add extra damage if an axe is equipped
             if (attackAxeSound != null)
             {
-                attackAxeSound.Play(); // Play sound for axe attacks
+                attackAxeSound.Play(); 
                 Debug.Log("Playing Axe Sound");
             }
             if (attackAxeEffect != null)
             {
-                attackAxeEffect.Play(); // Play effect for axe attacks
+                attackAxeEffect.Play(); 
                 Debug.Log("Playing Axe Effect");
             }
         }
@@ -74,12 +74,12 @@ public class PlayerAttack : MonoBehaviour
         {
             if (attackSound != null)
             {
-                attackSound.Play(); // Play default attack sound
+                attackSound.Play(); 
                 Debug.Log("Playing Default Attack Sound");
             }
             if (attackEffect != null)
             {
-                attackEffect.Play(); // Play default attack effect
+                attackEffect.Play(); 
                 Debug.Log("Playing Default Attack Effect");
             }
         }
@@ -88,7 +88,7 @@ public class PlayerAttack : MonoBehaviour
         return totalDamage;
     }
 
-    // For visualization in the Editor
+    // For visualization in Editor
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null)

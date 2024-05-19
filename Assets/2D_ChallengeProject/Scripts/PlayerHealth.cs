@@ -72,11 +72,7 @@ public class PlayerHealth : MonoBehaviour
             isDying = true;
             StartCoroutine(HandleDeath());
         }
-        //Debug.Log("Player has died");
-        // Implement player death logic  reload scene, show game over screen etc
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
-        // Example: Reload the current scene some end game animation later
-        //StartCoroutine(HandleDeath());        
+        //Debug.Log("Player has died");       
 
     }
 
@@ -91,7 +87,7 @@ public class PlayerHealth : MonoBehaviour
         // Wait for the duration of the death sound  2-3 seconds
         yield return new WaitForSeconds(playerDieSound != null ? playerDieSound.clip.length : 3.0f);
 
-        isDying = false; // Reset the flag if you intend to use the scene again later without reloading
+        isDying = false; // Reset the flag  to use the scene again later without reloading
         // Reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
