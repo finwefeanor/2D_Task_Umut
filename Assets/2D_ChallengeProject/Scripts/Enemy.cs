@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     public LayerMask playerLayer;
     public AudioSource enemyGetHitSound;
     public AudioSource enemyAttackSound;
+    public ParticleSystem enemyAttackParticle;
+    //public ParticleSystem enemyAttackParticle2;
     public AudioSource enemyDieSound;
 
     private float nextAttackTime = 0f;
@@ -26,7 +28,10 @@ public class Enemy : MonoBehaviour
                 if (playerHealth != null)
                 {
                     playerHealth.TakeDamage(attackDamage);
-                    if (enemyAttackSound != null) enemyAttackSound.Play();
+                    if (enemyAttackSound != null) 
+                        enemyAttackSound.Play();
+                    enemyAttackParticle.Play();
+                    //enemyAttackParticle2.Play();
                 }
             }
 
